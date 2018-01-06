@@ -34,6 +34,10 @@ body {
   font-size: 3rem;
   text-transform: uppercase; }
 
+.to-top--text {
+  text-decoration: none;
+  color: #3e3535; }
+
 .u-center-text {
   text-align: center; }
 
@@ -80,6 +84,13 @@ body {
 
 .btn--animated {
   transform: all .3s ease; }
+
+.to-top {
+  position: fixed;
+  top: 50%;
+  left: 2%;
+  background-color: #ffeeeb;
+  padding: 1rem; }
 
 .row {
   margin: 0 auto;

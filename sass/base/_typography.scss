@@ -29,3 +29,10 @@ body {
         }
     }
 }
+
+.to-top {
+    &--text {
+        text-decoration: none;
+        color: $color-dark-primary;
+    }
+}
