@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="shortcut icon" type="image/png" href="img/api.png"/> -->
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:200,300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"> 
-    <title>API MAP</title>
+    <title>The API Bakery</title>
 </head>
 <body>
     <head class="header">
@@ -59,9 +60,20 @@
         <section class="section-api section-api--1" id="api1">
             <div class="header__secondary u-center-text u-margin-bottom-medium u-margin-top-medium">
                 <h2 class="header__secondary--main">Iframely API</h2>
+                <h4 class="header__secondary--sub"> Copy and paste any news URL to see the thumbnail and article information.</h4>
             </div>
             <div class="api__content">
-                This is where the API will go. 
+
+                <div class="iframely">
+                    <input id="input" class="iframely__input" type="text" placeholder="url goes here">
+                    <button id="button-submit" class="iframely__button" type="submit">Submit</button>
+    
+                    <div class="iframely__results">
+                        <div class="iframely__results--title">
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </section>
@@ -69,6 +81,7 @@
         <section class="section-api section-api--2" id="api2">
             <div class="header__secondary u-center-text u-margin-bottom-medium u-margin-top-medium">
                 <h2 class="header__secondary--main">Google map API</h2>
+                <p class="header__secondary--sub"></p>
             </div>
             <div class="api__content">
                 This is where the API will go. 
@@ -116,20 +129,21 @@
             
         </section>
 
-        <!-- <section class="section__back-to-top">
+        <section class="section__back-to-top">
             <div class="to-top">
-                <a class="to-top--text"href="#header-primary"> Back to top </a>
+                <a href="#header-primary"> 
+                    <img class="to-top--img" src="img/arrow-up.svg" alt="arrow">
+                </a>
             </div>
+        </section>
 
-        </section> -->
-
-
-        
     </main>
 
     <footer class="u-center-text">
         Created by Cameron Tharp 
     </footer>
-    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/iframely.js"></script>
 </body>
 </html>

@@ -34,6 +34,9 @@ body {
   font-size: 3rem;
   text-transform: uppercase; }
 
+.header__secondary--sub {
+  font-size: 1.2rem; }
+
 .to-top--text {
   text-decoration: none;
   color: #3e3535; }
@@ -54,9 +57,44 @@ body {
   margin-bottom: 4rem; }
 
 .api__content {
-  border: solid black;
+  border: 1px solid #c2c0bf;
   width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 60rem; }
+
+.iframely__input {
+  margin: 2rem;
+  padding: .5rem;
+  width: 40rem;
+  height: 3rem; }
+
+.iframely__button {
+  padding: .7rem;
+  border: 1px solid #3e3535;
+  background-color: #3e3535;
+  color: #ffeeeb;
+  outline: 0; }
+
+.iframely__button:hover {
+  border: 1px solid #3e3535;
+  background-color: white;
+  color: #3e3535;
+  transition: .3s ease; }
+
+.iframely__results {
+  padding: 2rem; }
+  .iframely__results--image {
+    height: 35rem; }
+  .iframely__results--icon {
+    height: 3rem; }
+  .iframely__results--main {
+    font-size: 2rem; }
+  .iframely__results--sub {
+    font-size: 1.6rem; }
+  .iframely__results--bottom {
+    font-size: 1.4rem;
+    padding-right: 1rem;
+    padding-left: 1rem; }
 
 .btn:link, .btn:visited {
   text-decoration: none;
@@ -87,10 +125,14 @@ body {
 
 .to-top {
   position: fixed;
-  top: 50%;
-  left: 2%;
-  background-color: #ffeeeb;
-  padding: 1rem; }
+  top: 90%;
+  left: 2rem;
+  color: #c2c0bf;
+  text-decoration: none; }
+  .to-top--img {
+    height: 2rem;
+    border: 1px solid black;
+    border-radius: 100px; }
 
 .row {
   margin: 0 auto;

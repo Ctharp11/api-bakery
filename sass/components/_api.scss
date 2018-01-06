@@ -1,7 +1,63 @@
 .api {
     &__content {
-        border: solid black;
+        border: 1px solid $color-grey-light-2;
         width: $grid-width;
-        margin: 0 auto;
+        margin: 0 auto; 
+        height: 60rem;
     }
+}
+
+.iframely {
+
+    &__input {
+        margin: 2rem;
+        padding: .5rem;
+        width: 40rem;
+        height: 3rem;
+    }
+
+    &__button {
+        padding: .7rem;
+        border: 1px solid $color-dark-primary;
+        background-color: $color-dark-primary;
+        color: $color-pink-text;
+        outline: 0;
+    }
+
+    &__button:hover {
+        border: 1px solid $color-dark-primary;
+        background-color: white;
+        color: $color-dark-primary;
+        transition: .3s ease;
+    }
+
+    &__results {
+        padding: 2rem;
+
+        &--image {
+            height: 35rem;
+        }
+
+        &--icon {
+            height: 3rem;
+
+        }
+
+        &--main {
+            font-size: 2rem;
+        }
+
+        &--sub {
+            font-size: 1.6rem;
+        }
+
+        &--bottom {
+            font-size: 1.4rem;
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+    }
+
+
+
 }

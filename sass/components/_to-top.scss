@@ -1,7 +1,13 @@
 .to-top {
-    position: fixed;
-    top: 50%;
-    left: 0;
-    background-color: $color-pink-text;
-    padding: 1rem;
+    position: fixed; 
+    top: 90%;
+    left: 2rem;
+    color: $color-grey-light-2;
+    text-decoration: none;
+
+    &--img {
+        height: 2rem; 
+        border: 1px solid black;
+        border-radius: 100px;
+    }
 }
