@@ -1,0 +1,16 @@
+.header {
+    &__primary {
+        position: relative;
+        background-color: rgb(255,167,160);
+        border-bottom: 2px solid $color-dark-primary; 
+        box-shadow: 0 1rem 1.5rem rgba($color-black, .14);
+
+        &--logo {
+            position: absolute;
+            top: 3rem;
+            right: 21rem;
+            height: 10rem;
+        }
+    }
+}
+

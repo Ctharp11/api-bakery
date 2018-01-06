@@ -1,0 +1,116 @@
+/* Reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Encode Sans Expanded', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #333; }
+
+.header__primary--main {
+  font-size: 6rem;
+  font-weight: 200;
+  letter-spacing: 4px;
+  text-transform: uppercase; }
+
+.header__primary--sub {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1.7px; }
+
+.header__secondary--main {
+  font-size: 3rem;
+  text-transform: uppercase; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-top-small {
+  margin-top: 2rem; }
+
+.u-margin-top-medium {
+  margin-top: 4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.api__content {
+  border: solid black;
+  width: 80%;
+  margin: 0 auto; }
+
+.btn:link, .btn:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  text-transform: uppercase; }
+
+.btn--box {
+  width: 100%;
+  padding: 3rem;
+  background-color: #3e3535;
+  border-radius: 100px;
+  border: 3px solid #ffeeeb;
+  color: #ffeeeb;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  -moz-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform .3s ease; }
+
+.btn--box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.4); }
+
+.btn--box:active {
+  transform: translateY(0);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4); }
+
+.btn--animated {
+  transform: all .3s ease; }
+
+.row {
+  margin: 0 auto;
+  max-width: 80%;
+  clear: both; }
+  .row [class^="col-"] {
+    float: left;
+    padding: 1rem;
+    margin: 3rem 0;
+    text-align: center; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 4rem; }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 4rem) / 3); }
+
+.header__primary {
+  position: relative;
+  background-color: #ffa7a0;
+  border-bottom: 2px solid #3e3535;
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.14); }
+  .header__primary--logo {
+    position: absolute;
+    top: 3rem;
+    right: 21rem;
+    height: 10rem; }
+
+.section-head {
+  background-color: #faaca6;
+  height: 40rem; }
+
+.section-api {
+  background-color: #f7f7f7;
+  margin-top: -5rem;
+  padding: 5rem 0; }

@@ -1,0 +1,31 @@
+body {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-dark-grey;
+}
+
+.header {
+    &__primary {
+        &--main {
+            font-size: 6rem;
+            font-weight: 200;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        &--sub {
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 1.7px;
+        }
+    }
+
+    &__secondary {
+        &--main {
+            font-size: 3rem;
+            text-transform: uppercase;
+        }
+    }
+}
