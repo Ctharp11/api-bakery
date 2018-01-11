@@ -4,8 +4,9 @@ $('#iframely-button-submit').on('click', function() {
 })
 
 function iframely(input) {
-    const apiKey = "07ee4686e047984c7bb492";
-    const URL = "http://iframe.ly/api/iframely?url=" + input + "&api_key=" + apiKey;
+    const iframelyKey = "07ee4686e047984c7bb492";
+    var apiKey = apiKeys.iframely;
+    const URL = "http://iframe.ly/api/iframely?url=" + input + "&api_key=" + iframelyKey;
     console.log(URL);
     $.ajax({
         url: URL,

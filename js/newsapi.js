@@ -1,1 +1,2 @@
-console.log(keys);
+var newsAPI = apiKeys.newsapi;
+
