@@ -65,8 +65,8 @@
             <div class="api__content">
 
                 <div class="iframely">
-                    <input id="input" class="iframely__input" type="text" placeholder="url goes here">
-                    <button id="button-submit" class="iframely__button" type="submit">Submit</button>
+                    <input id="iframely-input" class="api-input" type="text" placeholder="url goes here">
+                    <button id="iframely-button-submit" class="api-button" type="submit">Submit</button>
     
                     <div class="iframely__results">
                         <div class="iframely__results--title">
@@ -84,7 +84,11 @@
                 <p class="header__secondary--sub"></p>
             </div>
             <div class="api__content">
-                This is where the API will go. 
+                    <input id="googlemap-input" class="api-input" type="text" placeholder="url goes here">
+                    <button id="googlemap-button-submit" class="api-button" type="submit">Submit</button>
+                    <div class="google-map">
+                        <div id="map"> </div> 
+                    </div>
             </div>
             
         </section>
@@ -94,7 +98,9 @@
                 <h2 class="header__secondary--main">Zomato API</h2>
             </div>
             <div class="api__content">
-                This is where the API will go. 
+                <input id="zomato-input" class="api-input" type="text" placeholder="url goes here">
+                <button id="zomato-button-submit" class="api-button" type="submit">Submit</button>
+                    
             </div>
             
         </section>
@@ -102,9 +108,22 @@
         <section class="section-api section-api--4" id="api4">
             <div class="header__secondary u-center-text u-margin-bottom-medium u-margin-top-medium">
                 <h2 class="header__secondary--main">Giphy API</h2>
+                <h4 class="header__secondary--sub"> A fun API that allows you to see GIFs from the website Giphy! Just enter a word to search GIFs. I've got some animal suggestions to start. You can also click to pause and start the GIFs.</h4>
             </div>
             <div class="api__content">
-                This is where the API will go. 
+                <div class="giphy">
+                    <div class="giphy__button"></div>
+
+                    <form id="animal-form">
+                        <label id="label-text" for="animal-input">Add an animal</label>
+    
+                        <input id="animal-input" class="api-input" type="text" placeholder="animal goes here">
+                        <button id="add-animal" class="api-button" type="submit">Submit</button>
+                    </form>
+                
+                    <div id="animals"></div> 
+
+                </div>
             </div>
             
         </section>
@@ -144,6 +163,10 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="js/iframely.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-Ri6fi_gT7fn6KOGxVVk0WC_mSr81fgk"></script>
+    <script text="type/javascript" src="js/googlemap.js"></script>
+    <script text="type/javascript" src="js/giphy.js"></script>
+    <script text="type/javascript" src="js/iframely.js"></script>
+    <script text="type/javascript" src="js/zomato.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
-$('#button-submit').on('click', function() {
-    let input = $('#input').val();
+$('#iframely-button-submit').on('click', function() {
+    let input = $('#iframely-input').val();
     iframely(input);
 })
 

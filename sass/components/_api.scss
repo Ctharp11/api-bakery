@@ -3,39 +3,18 @@
         border: 1px solid $color-grey-light-2;
         width: $grid-width;
         margin: 0 auto; 
-        height: 60rem;
+        // height: 60rem;
+        overflow: hidden;
     }
 }
 
 .iframely {
 
-    &__input {
-        margin: 2rem;
-        padding: .5rem;
-        width: 40rem;
-        height: 3rem;
-    }
-
-    &__button {
-        padding: .7rem;
-        border: 1px solid $color-dark-primary;
-        background-color: $color-dark-primary;
-        color: $color-pink-text;
-        outline: 0;
-    }
-
-    &__button:hover {
-        border: 1px solid $color-dark-primary;
-        background-color: white;
-        color: $color-dark-primary;
-        transition: .3s ease;
-    }
-
     &__results {
         padding: 2rem;
 
         &--image {
-            height: 35rem;
+            height: 35rem; 
         }
 
         &--icon {
@@ -54,10 +33,23 @@
         &--bottom {
             font-size: 1.4rem;
             padding-right: 1rem;
-            padding-left: 1rem;
+            padding-left: 1rem;  
         }
     }
+}
 
+.giphy {
+    &__buttons {
+        border: solid grey;
+        background-color: #FF4136;
+        padding: 10px;
+        margin: 3px;
+        border-radius: 3px;
+        font-size:16px;
+    }
 
-
+    &__div {
+        float: left;
+        margin: 1rem;
+    }
 }

@@ -16,3 +16,25 @@
 .u-margin-bottom-medium {
     margin-bottom: 4rem;
 }
+
+.api-input {
+    margin: 2rem;
+    padding: .5rem;
+    width: 40rem;
+    height: 3rem;
+}
+
+.api-button {
+    padding: .7rem;
+    border: 1px solid $color-dark-primary;
+    background-color: $color-dark-primary;
+    color: $color-pink-text;
+    outline: 0;
+
+    &:hover {
+        border: 1px solid $color-dark-primary;
+        background-color: white;
+        color: $color-dark-primary;
+        transition: .3s ease;
+    }
+}

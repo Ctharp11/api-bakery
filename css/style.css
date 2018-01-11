@@ -56,30 +56,29 @@ body {
 .u-margin-bottom-medium {
   margin-bottom: 4rem; }
 
-.api__content {
-  border: 1px solid #c2c0bf;
-  width: 80%;
-  margin: 0 auto;
-  height: 60rem; }
-
-.iframely__input {
+.api-input {
   margin: 2rem;
   padding: .5rem;
   width: 40rem;
   height: 3rem; }
 
-.iframely__button {
+.api-button {
   padding: .7rem;
   border: 1px solid #3e3535;
   background-color: #3e3535;
   color: #ffeeeb;
   outline: 0; }
+  .api-button:hover {
+    border: 1px solid #3e3535;
+    background-color: white;
+    color: #3e3535;
+    transition: .3s ease; }
 
-.iframely__button:hover {
-  border: 1px solid #3e3535;
-  background-color: white;
-  color: #3e3535;
-  transition: .3s ease; }
+.api__content {
+  border: 1px solid #c2c0bf;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden; }
 
 .iframely__results {
   padding: 2rem; }
@@ -95,6 +94,18 @@ body {
     font-size: 1.4rem;
     padding-right: 1rem;
     padding-left: 1rem; }
+
+.giphy__buttons {
+  border: solid grey;
+  background-color: #FF4136;
+  padding: 10px;
+  margin: 3px;
+  border-radius: 3px;
+  font-size: 16px; }
+
+.giphy__div {
+  float: left;
+  margin: 1rem; }
 
 .btn:link, .btn:visited {
   text-decoration: none;
