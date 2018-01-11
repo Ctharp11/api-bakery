@@ -37,6 +37,9 @@ body {
 .header__secondary--sub {
   font-size: 1.2rem; }
 
+.header__secondary--source {
+  color: #3e3535; }
+
 .to-top--text {
   text-decoration: none;
   color: #3e3535; }

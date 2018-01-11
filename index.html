@@ -26,7 +26,7 @@
                 </div>
                 <div class="col-1-of-3">
                         <a class="btn" href="#api2">
-                            <div class="btn--box btn--animated"> google map api </div>
+                            <div class="btn--box btn--animated"> News api </div>
                         </a>
                 </div>
                 <div class="col-1-of-3">
@@ -60,7 +60,8 @@
         <section class="section-api section-api--1" id="api1">
             <div class="header__secondary u-center-text u-margin-bottom-medium u-margin-top-medium">
                 <h2 class="header__secondary--main">Iframely API</h2>
-                <h4 class="header__secondary--sub"> Copy and paste any news URL to see the thumbnail and article information.</h4>
+                <h4 class="header__secondary--sub"> Copy and paste any news URL to see the thumbnail and article information. </h4>
+                <p><a class="header__secondary--source" href="https://iframely.com/"> https://iframely.com/ </a></p>
             </div>
             <div class="api__content">
 
@@ -80,15 +81,37 @@
 
         <section class="section-api section-api--2" id="api2">
             <div class="header__secondary u-center-text u-margin-bottom-medium u-margin-top-medium">
-                <h2 class="header__secondary--main">Google map API</h2>
-                <p class="header__secondary--sub"></p>
+                <h2 class="header__secondary--main">News API</h2>
+                <h4 class="header__secondary--sub"> Get breaking news headlines and search for articles from over 5,000 news sources and blogs the News API</h4>
+                <p><a class="header__secondary--source" href="https://iframely.com/"> https://newsapi.org/ </a></p>
             </div>
             <div class="api__content">
-                    <input id="googlemap-input" class="api-input" type="text" placeholder="url goes here">
-                    <button id="googlemap-button-submit" class="api-button" type="submit">Submit</button>
-                    <div class="google-map">
-                        <div id="map"> </div> 
+                <div class="apinews">
+                        <!-- <input id="apinews-input" class="api-input" type="text" placeholder="url goes here">
+                        <button id="apinews-button-submit" class="api-button" type="submit">Submit</button> -->
+                    <div class="row apinews__checkbox">
+                        <div class="col-md-2">
+                            <h4>COMPARE</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <form>
+                                <select class="select form-control" id="select-one"  value="News Sources"> 
+                                    <option value="option"> Choose your news source</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="col-md-2 and">
+                                <h4>and</h4>
+                            </div>
+                        <div class="col-md-4">
+                            <form>
+                                <select class="select form-control" id="select-two"  value="News Sources"> 
+                                    <option value="option"> Choose your news source</option>
+                                </select>
+                            </form>
+                        </div>
                     </div>
+                </div>
             </div>
             
         </section>
@@ -96,6 +119,7 @@
         <section class="section-api section-api--3" id="api3">
             <div class="header__secondary u-center-text u-margin-bottom-medium u-margin-top-medium">
                 <h2 class="header__secondary--main">Zomato API</h2>
+                <h4 class="header__secondary--sub"> A fun API that allows you to see GIFs from the website Giphy! Just enter a word to search GIFs. I've got some animal suggestions to start. You can also click to pause and start the GIFs.</h4>
             </div>
             <div class="api__content">
                 <input id="zomato-input" class="api-input" type="text" placeholder="url goes here">
@@ -131,9 +155,19 @@
         <section class="section-api section-api--5" id="api5">
             <div class="header__secondary u-center-text u-margin-bottom-medium u-margin-top-medium">
                 <h2 class="header__secondary--main">Youtube API</h2>
+                <h4 class="header__secondary--sub"> A fun API that allows you to see GIFs from the website Giphy! Just enter a word to search GIFs. I've got some animal suggestions to start. You can also click to pause and start the GIFs.</h4>
             </div>
             <div class="api__content">
-                This is where the API will go. 
+                <div class="youtube">
+                    <input id="youtube-input" class="api-input" type="text" placeholder="search for video">
+                    <button id="youtube-button-submit" class="api-button" type="submit">Submit</button>
+    
+                    <div class="youtube__results">
+                        <div class="youtube__results--title">
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
             
         </section>
@@ -141,9 +175,18 @@
         <section class="section-api section-api--6" id="api6">
             <div class="header__secondary u-center-text u-margin-bottom-medium u-margin-top-medium">
                 <h2 class="header__secondary--main">Spotify API</h2>
+                <h4 class="header__secondary--sub"> A fun API that allows you to see GIFs from the website Giphy! Just enter a word to search GIFs. I've got some animal suggestions to start. You can also click to pause and start the GIFs.</h4>
             </div>
             <div class="api__content">
-                This is where the API will go. 
+
+                <input id="spotify-input" class="api-input" type="text" placeholder="url goes here">
+                <button id="spotify-button-submit" class="api-button" type="submit">Submit</button>
+
+                <div class="spotify__results">
+                    <div class="spotify__results--title">
+                        
+                    </div>
+                </div> 
             </div>
             
         </section>
@@ -164,7 +207,8 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-Ri6fi_gT7fn6KOGxVVk0WC_mSr81fgk"></script>
-    <script text="type/javascript" src="js/googlemap.js"></script>
+    <script src="js/keys.js"></script>
+    <script text="type/javascript" src="js/newsapi.js"></script>
     <script text="type/javascript" src="js/giphy.js"></script>
     <script text="type/javascript" src="js/iframely.js"></script>
     <script text="type/javascript" src="js/zomato.js"></script>
