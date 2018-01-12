@@ -55,5 +55,17 @@
 }
 
 .apinews {
-    
+    &__first {
+        width: 40%;
+        float: left;
+    }
+    &__second {
+        width: 40%;
+        float: left;
+    }
+    &__img-dynamic {
+        width: 30%;
+    }
+
+
 }
