@@ -21,7 +21,6 @@ function buttons () {
 
 }
 
-
 $("#add-animal").on("click", function (){
 	event.preventDefault();
 	userSearch = $("#animal-input").val().trim();

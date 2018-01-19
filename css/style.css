@@ -25,7 +25,7 @@ body {
   text-transform: uppercase; }
 
 .header__primary--sub {
-  font-size: 3rem;
+  font-size: 2rem;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1.7px; }
@@ -98,28 +98,91 @@ body {
     padding-right: 1rem;
     padding-left: 1rem; }
 
-.giphy__buttons {
-  border: solid grey;
-  background-color: #FF4136;
-  padding: 10px;
-  margin: 3px;
-  border-radius: 3px;
-  font-size: 16px; }
-
-.giphy__div {
-  float: left;
-  margin: 1rem; }
+.giphy {
+  padding: 2rem; }
+  .giphy__buttons {
+    border: solid grey;
+    background-color: #FF4136;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 3px;
+    font-size: 16px; }
+  .giphy__div {
+    float: left;
+    margin: 1rem; }
 
 .apinews__first {
-  width: 40%;
-  float: left; }
+  margin-bottom: 4rem;
+  padding: 5px;
+  border: 1px solid #eee; }
+  .apinews__first--title {
+    font-size: 1.8rem;
+    height: 5rem;
+    margin-bottom: 5rem; }
+  .apinews__first--author {
+    font-size: 1.4rem; }
+  .apinews__first--description {
+    font-size: 1.2rem;
+    height: 10rem; }
+  .apinews__first--published {
+    height: 2rem; }
+  .apinews__first--url {
+    height: 2rem; }
 
 .apinews__second {
-  width: 40%;
-  float: left; }
+  margin-bottom: 4rem;
+  padding: 5px;
+  border: 1px solid #eee; }
+  .apinews__second--title {
+    font-size: 1.8rem;
+    height: 5rem;
+    margin-bottom: 5rem; }
+  .apinews__second--author {
+    font-size: 1.4rem; }
+  .apinews__second--description {
+    font-size: 1.2rem;
+    height: 10rem; }
+  .apinews__second--published {
+    height: 2rem; }
+  .apinews__second--url {
+    height: 2rem; }
 
 .apinews__img-dynamic {
-  width: 30%; }
+  width: 100%;
+  height: 20rem; }
+
+.happy-accidents {
+  height: 20rem;
+  margin-top: 2rem; }
+
+.zomato-results {
+  padding: 2rem; }
+  .zomato-results--content {
+    border: 1px solid #eee;
+    padding: 2.5rem;
+    margin: 2rem 0; }
+    .zomato-results--content-title {
+      font-size: 3rem;
+      margin-bottom: 2rem; }
+    .zomato-results--content-img {
+      height: 20rem; }
+    .zomato-results--content-cuisine {
+      font-size: 1.6rem;
+      margin: 1rem; }
+    .zomato-results--content-rank {
+      font-size: 1.4rem;
+      margin: 1rem; }
+    .zomato-results--content-address {
+      font-size: 1.2rem;
+      margin: 1rem; }
+
+.youtube {
+  padding: 2rem; }
+
+.dog {
+  padding: 2rem; }
+  .dog-img {
+    height: 30rem; }
 
 .btn:link, .btn:visited {
   text-decoration: none;
@@ -172,6 +235,8 @@ body {
       margin-right: 4rem; }
   .row .col-1-of-3 {
     width: calc((100% - 2 * 4rem) / 3); }
+  .row .col-1-of-2 {
+    width: calc((100% - 4rem) / 2); }
 
 .header__primary {
   position: relative;

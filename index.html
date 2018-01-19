@@ -14,7 +14,7 @@
         <div class="header__primary u-center-text">
             <h1 class="header__primary--main" id="header-primary">The API Bakery</h1>
 
-            <h3 class="header__primary--sub u-margin-bottom-small">Cookin' up some APIs</h3>
+            <h3 class="header__primary--sub u-margin-bottom-small">Website showcasing 6 working APIs</h3>
             <img class="header__primary--logo" src="img/api.svg" alt="cute-bunny">
         </div>
         <div class="section-head">
@@ -66,7 +66,7 @@
             <div class="api__content">
 
                 <div class="iframely">
-                    <input id="iframely-input" class="api-input" type="text" placeholder="url goes here">
+                    <input id="iframely-input" class="api-input" type="text" placeholder="Paste your http:// link here">
                     <button id="iframely-button-submit" class="api-button" type="submit">Submit</button>
     
                     <div class="iframely__results">
@@ -82,13 +82,11 @@
         <section class="section-api section-api--2" id="api2">
             <div class="header__secondary u-center-text u-margin-bottom-medium u-margin-top-medium">
                 <h2 class="header__secondary--main">News API</h2>
-                <h4 class="header__secondary--sub"> Get breaking news headlines and search for articles from over 5,000 news sources and blogs the News API</h4>
+                <h4 class="header__secondary--sub"> Compare top headlines from over 5,000 news sources and blogs the News API</h4>
                 <p><a class="header__secondary--source" href="https://iframely.com/"> https://newsapi.org/ </a></p>
             </div>
             <div class="api__content">
                 <div class="apinews">
-                        <!-- <input id="apinews-input" class="api-input" type="text" placeholder="url goes here">
-                        <button id="apinews-button-submit" class="api-button" type="submit">Submit</button> -->
                     <div class="row apinews__checkbox">
                         <div class="col-md-2">
                             <h4>COMPARE</h4>
@@ -113,12 +111,9 @@
                     </div>
                 </div>
                 <div class="row results">
-                    <div id="first" class="col-md-6">
-                        
-                    </div>
+                        <div id="first" class="col-1-of-2"></div>
     
-                    <div id="second" class="col-md-6">
-                    </div>
+                        <div id="second" class="col-1-of-2"></div> 
                 </div>
             </div>
             
@@ -127,11 +122,14 @@
         <section class="section-api section-api--3" id="api3">
             <div class="header__secondary u-center-text u-margin-bottom-medium u-margin-top-medium">
                 <h2 class="header__secondary--main">Zomato API</h2>
-                <h4 class="header__secondary--sub"> A fun API that allows you to see GIFs from the website Giphy! Just enter a word to search GIFs. I've got some animal suggestions to start. You can also click to pause and start the GIFs.</h4>
+                <h4 class="header__secondary--sub"> Type in a city to see it's Zomato top rated restaurants. </h4>
+                <p><a class="header__secondary--source" href="https://developers.zomato.com/api"> https://developers.zomato.com/api </a></p>
             </div>
             <div class="api__content">
-                <input id="zomato-input" class="api-input" type="text" placeholder="url goes here">
+                <input id="zomato-input" class="api-input" type="text" placeholder="Type city here">
                 <button id="zomato-button-submit" class="api-button" type="submit">Submit</button>
+
+                <div class="zomato-results" id="zomato-results"></div>
                     
             </div>
             
@@ -141,6 +139,7 @@
             <div class="header__secondary u-center-text u-margin-bottom-medium u-margin-top-medium">
                 <h2 class="header__secondary--main">Giphy API</h2>
                 <h4 class="header__secondary--sub"> A fun API that allows you to see GIFs from the website Giphy! Just enter a word to search GIFs. I've got some animal suggestions to start. You can also click to pause and start the GIFs.</h4>
+                <p><a class="header__secondary--source" href="https://developers.giphy.com/"> https://developers.giphy.com/ </a></p>
             </div>
             <div class="api__content">
                 <div class="giphy">
@@ -149,11 +148,11 @@
                     <form id="animal-form">
                         <label id="label-text" for="animal-input">Add an animal</label>
     
-                        <input id="animal-input" class="api-input" type="text" placeholder="animal goes here">
+                        <input id="animal-input" class="api-input" type="text" placeholder="Add animal button">
                         <button id="add-animal" class="api-button" type="submit">Submit</button>
                     </form>
                 
-                    <div id="animals"></div> 
+                    <div class="giphy" id="animals"></div> 
 
                 </div>
             </div>
@@ -163,15 +162,18 @@
         <section class="section-api section-api--5" id="api5">
             <div class="header__secondary u-center-text u-margin-bottom-medium u-margin-top-medium">
                 <h2 class="header__secondary--main">Youtube API</h2>
-                <h4 class="header__secondary--sub"> A fun API that allows you to see GIFs from the website Giphy! Just enter a word to search GIFs. I've got some animal suggestions to start. You can also click to pause and start the GIFs.</h4>
+                <h4 class="header__secondary--sub"> Just an old fashion YouTube app. Enter a search term and a Youtube Video will pop open. </h4>
+                <p><a class="header__secondary--source" href="https://developers.google.com/youtube/"> https://developers.google.com/youtube/ </a></p>
             </div>
             <div class="api__content">
                 <div class="youtube">
-                    <input id="youtube-input" class="api-input" type="text" placeholder="search for video">
+                    <input id="youtube-input" class="api-input" type="text" placeholder="Search YouTube">
                     <button id="youtube-button-submit" class="api-button" type="submit">Submit</button>
     
                     <div class="youtube__results">
                         <div class="youtube__results--title">
+                            <div class="youtube" id="player"></div>
+                                
                             
                         </div>
                     </div>
@@ -182,17 +184,18 @@
 
         <section class="section-api section-api--6" id="api6">
             <div class="header__secondary u-center-text u-margin-bottom-medium u-margin-top-medium">
-                <h2 class="header__secondary--main">Spotify API</h2>
-                <h4 class="header__secondary--sub"> A fun API that allows you to see GIFs from the website Giphy! Just enter a word to search GIFs. I've got some animal suggestions to start. You can also click to pause and start the GIFs.</h4>
+                <h2 class="header__secondary--main">Dog API</h2>
+                <h4 class="header__secondary--sub"> API that let's you search for random images of man's best friend. Just enter a dog breed and commence happiness.</h4>
+                <p><a class="header__secondary--source" href="https://dog.ceo/dog-api/"> https://dog.ceo/dog-api/ </a></p>
             </div>
             <div class="api__content">
 
-                <input id="spotify-input" class="api-input" type="text" placeholder="url goes here">
-                <button id="spotify-button-submit" class="api-button" type="submit">Submit</button>
+                <input id="dog-input" class="api-input" type="text" placeholder="Search dog breed">
+                <button id="dog-button-submit" class="api-button" type="submit">Submit</button>
 
-                <div class="spotify__results">
-                    <div class="spotify__results--title">
-                        
+                <div class="dog__results">
+                    <div class="dog__results--title">
+                        <div class="dog" id="dog-results"></div>
                     </div>
                 </div> 
             </div>
@@ -216,9 +219,11 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-Ri6fi_gT7fn6KOGxVVk0WC_mSr81fgk"></script>
     <script src="js/keys.js"></script>
+    <script text="type/javascript" src="js/dog.js"></script>
     <script text="type/javascript" src="js/newsapi.js"></script>
     <script text="type/javascript" src="js/giphy.js"></script>
     <script text="type/javascript" src="js/iframely.js"></script>
+    <script text="type/javascript" src="js/youtube.js"></script>
     <script text="type/javascript" src="js/zomato.js"></script>
 </body>
 </html>

@@ -3,7 +3,6 @@
         border: 1px solid $color-grey-light-2;
         width: $grid-width;
         margin: 0 auto; 
-        // height: 60rem;
         overflow: hidden;
     }
 }
@@ -39,6 +38,10 @@
 }
 
 .giphy {
+
+    padding: 2rem;
+
+
     &__buttons {
         border: solid grey;
         background-color: #FF4136;
@@ -56,16 +59,122 @@
 
 .apinews {
     &__first {
-        width: 40%;
-        float: left;
+        margin-bottom: 4rem;
+        padding: 5px;
+        border: 1px solid #eee;
+
+        &--title {
+            font-size: 1.8rem;
+            height: 5rem;
+            margin-bottom: 5rem;
+        }
+
+        &--author{
+            font-size: 1.4rem;
+        }
+
+        &--description {
+            font-size: 1.2rem;
+            height: 10rem;
+        }
+
+        &--published {
+            height: 2rem;
+        }
+
+        &--url {
+            height: 2rem;
+        }
     }
     &__second {
-        width: 40%;
-        float: left;
+        margin-bottom: 4rem;
+        padding: 5px;
+        border: 1px solid #eee;
+
+        &--title {
+            font-size: 1.8rem;
+            height: 5rem;
+            margin-bottom: 5rem;
+        }
+
+        &--author{
+            font-size: 1.4rem;
+        }
+
+        &--description {
+            font-size: 1.2rem;
+            height: 10rem;
+        }
+
+        &--published {
+            height: 2rem;
+        }
+
+        &--url {
+            height: 2rem;
+        }
     }
     &__img-dynamic {
-        width: 30%;
+        width: 100%;
+        height: 20rem;
     }
 
 
 }
+
+.happy-accidents {
+    height: 20rem;
+    margin-top: 2rem;
+}
+
+.zomato-results {
+    padding: 2rem;
+
+    &--content {
+        border: 1px solid #eee;
+        padding: 2.5rem;
+        margin: 2rem 0;
+
+        &-title {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+
+        }
+
+        &-img {
+            height: 20rem;
+            
+        }
+
+        &-cuisine {
+            font-size: 1.6rem;
+            margin: 1rem;
+            
+        }
+
+        &-rank {
+            font-size: 1.4rem;
+            margin: 1rem;
+            
+        }
+
+        &-address{
+            font-size: 1.2rem;
+            margin: 1rem;
+            
+        }
+    }
+}
+
+.youtube {
+    padding: 2rem;
+}
+
+.dog {
+    padding: 2rem;
+
+    &-img {
+        height: 30rem;
+    }
+}
+
