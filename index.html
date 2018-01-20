@@ -190,8 +190,14 @@
             </div>
             <div class="api__content">
 
-                <input id="dog-input" class="api-input" type="text" placeholder="Search dog breed">
-                <button id="dog-button-submit" class="api-button" type="submit">Submit</button>
+                <form>
+                    <input autocomplete="off" id="dog-input" class="dog-input api-input" type="text" placeholder="Search dog breed">
+                    <button id="dog-button-submit" class="api-button" type="submit">Submit</button>
+                    <ul class="dog-dropdown">
+                        <!-- <li class="dog-dropdown-item"></li> -->
+                    </ul>
+                </form>
+               
 
                 <div class="dog__results">
                     <div class="dog__results--title">

@@ -176,5 +176,40 @@
     &-img {
         height: 30rem;
     }
+
+    &-input {
+        margin-bottom: 0;
+
+        // &:focus ~ .dog-dropdown {
+        //     // opacity: 1;
+        //     // visibility: visible;
+        //     display: block;
+        // }
+
+    }
+
+    &-dropdown {
+        // opacity: 0;
+        // visibility: hidden;
+        // display: none;
+        border: 1px solid #eee;
+        background-color: white;
+        width: 40rem; 
+        margin: 0 2rem;
+        list-style: none; 
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+        
+
+        &-item {
+             padding: 1rem;
+             border-bottom: 1px solid #eee;
+             font-size: 1.4rem;
+             text-align: center;
+
+             &:hover {
+                 cursor: pointer;
+             }
+        }
+    }
 }
 
