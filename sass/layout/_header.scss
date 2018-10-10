@@ -1,15 +1,29 @@
 .header {
     &__primary {
         position: relative;
-        background-color: rgb(255,167,160);
+        background-color: rgb(255,167,160); 
         border-bottom: 2px solid $color-dark-primary; 
         box-shadow: 0 1rem 1.5rem rgba($color-black, .14);
 
         &--logo {
             position: absolute;
             top: 3rem;
-            right: 21rem;
+            left: 5rem;
             height: 10rem;
+            @media all and (max-width: 767px) {
+                height: 7rem;
+            }
+            @media all and (max-width: 620px) {
+                height: 10vw;
+                left: 1rem;
+                top: 1rem;
+            }
+        }
+
+        &--box {
+            @media all and (max-width: 767px) {
+                width: 70%;
+            }
         }
     }
 }

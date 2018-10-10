@@ -12,6 +12,10 @@ html {
 body {
   box-sizing: border-box; }
 
+html {
+  max-width: 1500px;
+  margin: 0 auto; }
+
 body {
   font-family: 'Encode Sans Expanded', sans-serif;
   font-weight: 400;
@@ -23,12 +27,28 @@ body {
   font-weight: 200;
   letter-spacing: 4px;
   text-transform: uppercase; }
+  @media all and (max-width: 767px) {
+    .header__primary--main {
+      font-size: 4rem;
+      width: 70%;
+      margin: 0 auto; } }
+  @media all and (max-width: 620px) {
+    .header__primary--main {
+      font-size: 4vw; } }
 
 .header__primary--sub {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1.7px; }
+  @media all and (max-width: 767px) {
+    .header__primary--sub {
+      width: 70%;
+      margin: 0 auto;
+      font-size: 1.6rem; } }
+  @media all and (max-width: 620px) {
+    .header__primary--sub {
+      font-size: 2vw; } }
 
 .header__secondary--main {
   font-size: 3rem;
@@ -64,6 +84,9 @@ body {
   padding: .5rem;
   width: 40rem;
   height: 3rem; }
+  @media all and (max-width: 767px) {
+    .api-input {
+      width: 90%; } }
 
 .api-button {
   padding: .7rem;
@@ -71,6 +94,9 @@ body {
   background-color: #3e3535;
   color: #ffeeeb;
   outline: 0; }
+  @media all and (max-width: 767px) {
+    .api-button {
+      margin-left: 2rem; } }
   .api-button:hover {
     border: 1px solid #3e3535;
     background-color: white;
@@ -87,6 +113,9 @@ body {
   padding: 2rem; }
   .iframely__results--image {
     height: 35rem; }
+    @media all and (max-width: 500px) {
+      .iframely__results--image {
+        width: 90%; } }
   .iframely__results--icon {
     height: 3rem; }
   .iframely__results--main {
@@ -110,6 +139,9 @@ body {
   .giphy__div {
     float: left;
     margin: 1rem; }
+    @media all and (max-width: 500px) {
+      .giphy__div {
+        width: 90%; } }
 
 .apinews__first {
   margin-bottom: 4rem;
@@ -119,11 +151,23 @@ body {
     font-size: 1.8rem;
     height: 5rem;
     margin-bottom: 5rem; }
+    @media all and (max-width: 900px) {
+      .apinews__first--title {
+        font-size: 1.4rem; } }
+    @media all and (max-width: 600px) {
+      .apinews__first--title {
+        height: 11rem; } }
   .apinews__first--author {
     font-size: 1.4rem; }
   .apinews__first--description {
     font-size: 1.2rem;
     height: 10rem; }
+    @media all and (max-width: 1000px) {
+      .apinews__first--description {
+        height: 15rem; } }
+    @media all and (max-width: 600px) {
+      .apinews__first--description {
+        display: none; } }
   .apinews__first--published {
     height: 2rem; }
   .apinews__first--url {
@@ -137,11 +181,23 @@ body {
     font-size: 1.8rem;
     height: 5rem;
     margin-bottom: 5rem; }
+    @media all and (max-width: 900px) {
+      .apinews__second--title {
+        font-size: 1.4rem; } }
+    @media all and (max-width: 600px) {
+      .apinews__second--title {
+        height: 11rem; } }
   .apinews__second--author {
     font-size: 1.4rem; }
   .apinews__second--description {
     font-size: 1.2rem;
     height: 10rem; }
+    @media all and (max-width: 1000px) {
+      .apinews__second--description {
+        height: 15rem; } }
+    @media all and (max-width: 600px) {
+      .apinews__second--description {
+        display: none; } }
   .apinews__second--published {
     height: 2rem; }
   .apinews__second--url {
@@ -183,6 +239,9 @@ body {
   padding: 2rem; }
   .dog-img {
     height: 30rem; }
+    @media all and (max-width: 767px) {
+      .dog-img {
+        width: 90%; } }
   .dog-input {
     margin-bottom: 0; }
   .dog-dropdown {
@@ -192,6 +251,9 @@ body {
     margin: 0 2rem;
     list-style: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    @media all and (max-width: 767px) {
+      .dog-dropdown {
+        width: 90%; } }
     .dog-dropdown-item {
       padding: 1rem;
       border-bottom: 1px solid #eee;
@@ -215,6 +277,20 @@ body {
   -webkit-transition: -webkit-transform 0.3s ease;
   -moz-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform .3s ease; }
+  @media all and (max-width: 888px) {
+    .btn--box {
+      padding: 1rem; } }
+  @media all and (max-width: 767px) {
+    .btn--box {
+      font-size: 1.6rem; } }
+  @media all and (max-width: 620px) {
+    .btn--box {
+      font-size: 1.4rem; } }
+  @media all and (max-width: 400px) {
+    .btn--box {
+      border-radius: 0;
+      padding: 2px;
+      height: 8rem; } }
 
 .btn--box:hover {
   transform: translateY(-3px);
@@ -242,6 +318,9 @@ body {
   margin: 0 auto;
   max-width: 80%;
   clear: both; }
+  @media all and (max-width: 767px) {
+    .row {
+      max-width: 95%; } }
   .row [class^="col-"] {
     float: left;
     padding: 1rem;
@@ -249,10 +328,23 @@ body {
     text-align: center; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 4rem; }
+      @media all and (max-width: 990px) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 1rem; } }
+      @media all and (max-width: 500px) {
+        .row [class^="col-"]:not(:last-child) {
+          margin: 1rem 0;
+          margin-right: 1rem; } }
   .row .col-1-of-3 {
     width: calc((100% - 2 * 4rem) / 3); }
+    @media all and (max-width: 767px) {
+      .row .col-1-of-3 {
+        width: calc((100% - 2 * 1rem) / 3); } }
   .row .col-1-of-2 {
     width: calc((100% - 4rem) / 2); }
+    @media all and (max-width: 990px) {
+      .row .col-1-of-2 {
+        width: calc((100% - 1rem) / 2); } }
 
 .header__primary {
   position: relative;
@@ -262,8 +354,19 @@ body {
   .header__primary--logo {
     position: absolute;
     top: 3rem;
-    right: 21rem;
+    left: 5rem;
     height: 10rem; }
+    @media all and (max-width: 767px) {
+      .header__primary--logo {
+        height: 7rem; } }
+    @media all and (max-width: 620px) {
+      .header__primary--logo {
+        height: 10vw;
+        left: 1rem;
+        top: 1rem; } }
+  @media all and (max-width: 767px) {
+    .header__primary--box {
+      width: 70%; } }
 
 .section-head {
   background-color: #faaca6;
@@ -271,5 +374,7 @@ body {
 
 .section-api {
   background-color: #f7f7f7;
-  margin-top: -5rem;
   padding: 5rem 0; }
+  @media all and (max-width: 530px) {
+    .section-api {
+      padding: 1rem; } }

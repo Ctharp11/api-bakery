@@ -14,6 +14,9 @@
 
         &--image {
             height: 35rem; 
+            @media all and (max-width: 500px) {
+                width: 90%;
+            }
         }
 
         &--icon {
@@ -54,6 +57,9 @@
     &__div {
         float: left;
         margin: 1rem;
+        @media all and (max-width: 500px) {
+            width: 90%;
+        }
     }
 }
 
@@ -67,6 +73,12 @@
             font-size: 1.8rem;
             height: 5rem;
             margin-bottom: 5rem;
+            @media all and (max-width: 900px) {
+                font-size: 1.4rem;
+            }
+            @media all and (max-width: 600px) {
+                height: 11rem;
+            }
         }
 
         &--author{
@@ -76,6 +88,12 @@
         &--description {
             font-size: 1.2rem;
             height: 10rem;
+            @media all and (max-width: 1000px) {
+                height: 15rem;
+            }
+            @media all and (max-width: 600px) {
+                display: none;
+            }
         }
 
         &--published {
@@ -95,6 +113,12 @@
             font-size: 1.8rem;
             height: 5rem;
             margin-bottom: 5rem;
+            @media all and (max-width: 900px) {
+                font-size: 1.4rem;
+            }
+            @media all and (max-width: 600px) {
+                height: 11rem;
+            }
         }
 
         &--author{
@@ -104,6 +128,12 @@
         &--description {
             font-size: 1.2rem;
             height: 10rem;
+            @media all and (max-width: 1000px) {
+                height: 15rem;
+            }
+            @media all and (max-width: 600px) {
+                display: none;
+            }
         }
 
         &--published {
@@ -175,6 +205,9 @@
 
     &-img {
         height: 30rem;
+        @media all and (max-width: 767px) {
+            width: 90%;
+        }
     }
 
     &-input {
@@ -198,6 +231,9 @@
         margin: 0 2rem;
         list-style: none; 
         box-shadow: 0 1rem 2rem rgba($color-black, .2);
+        @media all and (max-width: 767px) {
+            width: 90%;
+        }
         
 
         &-item {

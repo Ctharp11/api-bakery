@@ -22,6 +22,9 @@
     padding: .5rem;
     width: 40rem;
     height: 3rem;
+    @media all and (max-width: 767px) {
+        width: 90%;
+    }
 }
 
 .api-button {
@@ -30,6 +33,9 @@
     background-color: $color-dark-primary;
     color: $color-pink-text;
     outline: 0;
+    @media all and (max-width: 767px) {
+        margin-left: 2rem;
+    }
 
     &:hover {
         border: 1px solid $color-dark-primary;

@@ -1,6 +1,9 @@
 .row{
     margin: 0 auto;
     max-width: $grid-width;
+    @media all and (max-width: 767px) {
+        max-width: 95%;
+    }
 
     @include clearfix;
 
@@ -11,16 +14,28 @@
         text-align: center;
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+            @media all and (max-width: 990px) {
+                margin-right: 1rem;
+            }
+            @media all and (max-width: 500px) {
+                margin: 1rem 0;
+                margin-right: 1rem;
+            }
         }
     }
 
     .col-1-of-3 {
         width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
-        
+        @media all and (max-width: 767px) {
+            width: calc((100% - 2 * 1rem) / 3);
+        }
     }
 
     .col-1-of-2 {
         width: calc((100% - #{$gutter-horizontal}) / 2);
+        @media all and (max-width: 990px) {
+            width: calc((100% - 1rem) / 2);
+        }
     }
 }
 
